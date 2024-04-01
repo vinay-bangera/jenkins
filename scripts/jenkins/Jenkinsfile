@@ -1,0 +1,23 @@
+pipeline {
+
+    agent {
+        label 'ansible'
+    }
+
+    stages {
+        stage ('Configure')  {
+            steps {
+                sh 'pwd'
+                sh 'whoami'
+                sh 'ansible --version'
+            }
+        }
+
+        stage ('Ping')  {
+            steps {
+
+            }
+        }
+
+    }
+}
