@@ -1,2 +1,2 @@
-[linux]
-10.211.55.13
+
+host1 ansible_host=10.211.55.13 ansible_user=parallels ansible_password=Sunder123$
