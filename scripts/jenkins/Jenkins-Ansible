@@ -7,9 +7,8 @@ pipeline {
     stages {
         stage ('Configure')  {
             steps {
-                sh 'pwd'
-                sh 'whoami'
-                sh 'ansible --version'
+                //sh 'ansible-playbook -i scripts/ansible/inventory/linux-vm.hosts scripts/ansible/playbooks/test-playbook.yaml'
+                sh 'ansible-playbook -i scripts/ansible/inventory/linux-vm.hosts -m ping'
             }
         }
     }
