@@ -8,7 +8,7 @@ pipeline {
         stage ('Configure')  {
             steps {
                 //sh 'ansible-playbook -i scripts/ansible/inventory/linux-vm.hosts scripts/ansible/playbooks/test-playbook.yaml'
-                sh 'ansible -i scripts/ansible/inventory/linux-vm.hosts -m ping'
+                sh 'ansible all -i scripts/ansible/inventory/linux-vm.hosts -m ping -v'
             }
         }
     }
