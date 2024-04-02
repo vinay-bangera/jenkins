@@ -12,12 +12,5 @@ pipeline {
                 sh 'ansible --version'
             }
         }
-
-        stage ('Ping')  {
-            steps {
-
-            }
-        }
-
     }
 }
